@@ -49,7 +49,6 @@ namespace ShoppingAPI
 
             //Setup Using Identity as Security
             app.UseAuthentication();
-
             app.UseStaticFiles();
 
             //Add this line to make MVC use the Default Route System
