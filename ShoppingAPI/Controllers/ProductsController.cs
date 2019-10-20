@@ -16,19 +16,11 @@ namespace ShoppingAPI.Controllers
     {
         //Define a sample List
         List<Product> products = new List<Product>()
-    {
-            new Product{ProductId =1, Name="Keyboard", Category="Computer Parts", Price=10},
-            new Product{ProductId =2, Name="Joystick", Category="Console Devices", Price=15.22M},
-            new Product{ProductId =3, Name="Monitor", Category="Computer Parts", Price=50}
-    };
-
-        // You can Define an array List if u like and work with that
-        //Product[] products = new Product[]
-        //    {
-        //        new Product{ProductId =1, Name="Keyboard", Category="Computer Parts", Price=10},
-        //        new Product{ProductId =2, Name="Joystick", Category="Console Devices", Price=15.22M},
-        //        new Product{ProductId =3, Name="Monitor", Category="Computer Parts", Price=50}
-        //    };
+        {
+            new Product{ProductId =1, Name="Keyboard", Category="Computer Parts", Price=10, Description="It is A Mechanical Keyboard.",Photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaanfFPoO2cjsYid3lH6nMokhwwRT8DPHD4rSGL6FxrMt5WVLvuw"},
+            new Product{ProductId =2, Name="Joystick", Category="Console Devices", Price=15.22M, Description="It is Modern Joystick.",Photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xawBWIEOlSNgX-rEiiuq4V8YC0Tl2DypYqfX-iAhko9LOHnS"},
+            new Product{ProductId =3, Name="Monitor", Category="Computer Parts", Price=50, Description="Gaming Series with 144 Mhz",Photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3N0u4d-s0nRSNAeJx2BgGB3lVMfYmueKeJ1G4dwUIqrEEdCvA"}
+        };
 
 
         // GET an Enumerable List of Product

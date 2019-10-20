@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -49,7 +49,12 @@ namespace ShoppingAPI
 
             //Setup Using Identity as Security
             app.UseAuthentication();
-            app.UseStaticFiles();
+
+            //app.UseStaticFiles();
+            //app.UseDefaultFiles();
+
+            //Setup this to use AngularJS as FrontEnd instead of Above settings
+            app.UseFileServer();
 
             //Add this line to make MVC use the Default Route System
             app.UseMvcWithDefaultRoute();
